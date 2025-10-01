@@ -1,0 +1,24 @@
+name: Build
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install pip dependencies
+        run: pip install --user -r requirements.txt
+      - name: Build and deploy site
+        run: mkdocs gh-deploy --force
