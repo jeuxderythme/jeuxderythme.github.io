@@ -1,0 +1,16 @@
+site_name: Jeux de rythme
+site_url: https://jeuxderythme.fr
+repo_url: https://github.com/jeuxderythme/jeuxderythme.github.io/
+theme:
+  name: material
+  language: fr
+  palette:
+    primary: blue
+    accent: purple
+plugins:
+  - search
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
