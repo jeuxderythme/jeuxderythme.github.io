@@ -9,6 +9,7 @@ theme:
     accent: purple
 plugins:
   - search
+  - git-revision-date-localized
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
