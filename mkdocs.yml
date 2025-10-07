@@ -6,8 +6,29 @@ theme:
   name: material
   language: fr
   palette:
-    primary: blue
-    accent: purple
+      # Toggle for auto mode
+    - media: "(prefers-color-scheme)"
+      primary: blue
+      accent: purple
+      toggle:
+        icon: material/brightness-auto
+        name: Passer en mode clair
+    # Toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Passer en mode sombre
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Passer en mode automatique
   features:
     - search.highlight
 plugins:
