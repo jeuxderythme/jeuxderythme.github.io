@@ -46,7 +46,7 @@ extra:
     - icon: fontawesome/brands/github 
       link: https://github.com/jeuxderythme/jeuxderythme.github.io
     - icon: fontawesome/brands/discord 
-      link: https://discord.gg/
+      link: https://discord.gg/9RbS8Svx5m
 
 nav:
   - Accueil: index.md
